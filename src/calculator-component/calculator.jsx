@@ -1,3 +1,4 @@
+import "./calculator.css";
 export const Calculator = () => {
   const outlineBtn =
     "w-16 h-16 rounded-lg border-2 border-neutral-500 hover:bg-neutral-500/30 max-sm:hover:bg-transparent transition-all";
