@@ -65,7 +65,10 @@ export const Calculator = () => {
       </div>
       <div className="btns w-full text-white text-3xl flex flex-col justify items-center gap-3">
         <div className="w-full flex justify-between items-center gap-3">
-          <button className="w-full h-16 rounded-lg  bg-red-500 hover:bg-red-600 transition-all active:opacity-90 max-sm:hover:bg-red-500 max-sm:active:opacity-100">
+          <button
+            onClick={clearAll}
+            className="all-clear w-full h-16 rounded-lg  bg-red-500 hover:bg-red-600 transition-all active:opacity-90 max-sm:hover:bg-red-500 max-sm:active:opacity-100"
+          >
             AC
           </button>
           <div className="w-full h-16 flex justify-center items-center rounded-lg  bg-red-500 hover:bg-red-600 transition-all active:opacity-90 max-sm:hover:bg-red-500 cursor-pointer max-sm:active:opacity-100">
