@@ -7,6 +7,7 @@ export const Calculator = () => {
     "w-16 h-16 rounded-lg bg-neutral-600 hover:bg-neutral-600/80 active:bg-neutral-600/70 transition-all max-sm:hover:bg-neutral-600 max-sm:active:bg-neutral-600";
 
   const [mainInpValue, setMainInpValue] = useState("");
+  const [mainHistoryInpValue, setHistoryInpValue] = useState("");
 
   const takeInp = (e) => {
     if (
@@ -19,6 +20,20 @@ export const Calculator = () => {
       return;
     } else {
       setMainInpValue(mainInpValue + e.target.innerText);
+    }
+  };
+
+  const calculate = () => {
+    if (mainInpValue === "Error" || !mainInpValue) {
+      return;
+    }
+    try {
+      let cal = eval(mainInpValue);
+      let result = String(cal);
+      setMainInpValue(result);
+      setHistoryInpValue(mainInpValue);
+    } catch (error) {
+      setMainInpValue("Error");
     }
   };
 
