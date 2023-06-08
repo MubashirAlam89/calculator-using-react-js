@@ -7,7 +7,7 @@ export const Calculator = () => {
   return (
     <div className="main-container mx-auto my-28 max-sm:my-7 flex flex-col justify-center items-center gap-6 p-6 px-7 rounded-3xl bg-neutral-800">
       <div className="w-full flex justify-between items-start mt-2 mb-0">
-        <div className="flex flex-col justify-between gap-2  items-start">
+        <div className="brand-and-model flex flex-col justify-between gap-1.5 mt-0.5  items-start">
           <img src="/logo.png" className="w-24 opacity-90" alt="img" />
           <h2 className="text-white text-xl font-medium opacity-80">HS-8LV</h2>
         </div>
@@ -25,7 +25,7 @@ export const Calculator = () => {
           id="main-inp"
         />
       </div>
-      <div className="btns w-full text-white text-3xl flex flex-col justify items-center gap-4">
+      <div className="btns w-full text-white text-3xl flex flex-col justify items-center gap-3">
         <div className="w-full flex justify-between items-center gap-3">
           <button className="w-full h-16 rounded-lg  bg-red-500 hover:bg-red-600 transition-all active:opacity-90 max-sm:hover:bg-red-500 max-sm:active:opacity-100">
             AC
