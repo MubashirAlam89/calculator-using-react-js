@@ -1,7 +1,7 @@
 import "./calculator.css";
 export const Calculator = () => {
   const outlineBtn =
-    "w-16 h-16 rounded-lg border-2 border-neutral-500 hover:bg-neutral-500/30 max-sm:hover:bg-transparent transition-all";
+    "w-16 h-16 rounded-lg border-2 border-neutral-500 hover:bg-neutral-500/30 max-sm:hover:bg-transparent active:opacity-90 max-sm:active:opacity-100 transition-all";
   const fillBtn =
     "w-16 h-16 rounded-lg bg-neutral-600 hover:bg-neutral-600/80 active:bg-neutral-600/70 transition-all max-sm:hover:bg-neutral-600 max-sm:active:bg-neutral-600";
   return (
