@@ -51,29 +51,59 @@ export const Calculator = () => {
           <div className="w-full h-16 flex justify-center items-center rounded-lg  bg-red-500 hover:bg-red-600 transition-all active:opacity-90 max-sm:hover:bg-red-500 cursor-pointer max-sm:active:opacity-100">
             <img src="/backspace.png" className="w-8 mr-0.5 " alt="" />
           </div>
-          <button className={`fill-btn ${fillBtn}`}>/</button>
+          <button onClick={takeInp} className={`fill-btn ${fillBtn}`}>
+            /
+          </button>
         </div>
         <div className="w-full flex justify-between items-center gap-3">
-          <button className={`outline-btn ${outlineBtn}`}>7</button>
-          <button className={`outline-btn ${outlineBtn}`}>8</button>
-          <button className={`outline-btn ${outlineBtn}`}>9</button>
-          <button className={`fill-btn ${fillBtn}`}>*</button>
+          <button onClick={takeInp} className={`outline-btn ${outlineBtn}`}>
+            7
+          </button>
+          <button onClick={takeInp} className={`outline-btn ${outlineBtn}`}>
+            8
+          </button>
+          <button onClick={takeInp} className={`outline-btn ${outlineBtn}`}>
+            9
+          </button>
+          <button onClick={takeInp} className={`fill-btn ${fillBtn}`}>
+            *
+          </button>
         </div>
         <div className="w-full flex justify-between items-center gap-3">
-          <button className={`outline-btn ${outlineBtn}`}>4</button>
-          <button className={`outline-btn ${outlineBtn}`}>5</button>
-          <button className={`outline-btn ${outlineBtn}`}>6</button>
-          <button className={`fill-btn ${fillBtn}`}>+</button>
+          <button onClick={takeInp} className={`outline-btn ${outlineBtn}`}>
+            4
+          </button>
+          <button onClick={takeInp} className={`outline-btn ${outlineBtn}`}>
+            5
+          </button>
+          <button onClick={takeInp} className={`outline-btn ${outlineBtn}`}>
+            6
+          </button>
+          <button onClick={takeInp} className={`fill-btn ${fillBtn}`}>
+            +
+          </button>
         </div>
         <div className="w-full flex justify-between items-center gap-3">
-          <button className={`outline-btn ${outlineBtn}`}>1</button>
-          <button className={`outline-btn ${outlineBtn}`}>2</button>
-          <button className={`outline-btn ${outlineBtn}`}>3</button>
-          <button className={`fill-btn ${fillBtn}`}>-</button>
+          <button onClick={takeInp} className={`outline-btn ${outlineBtn}`}>
+            1
+          </button>
+          <button onClick={takeInp} className={`outline-btn ${outlineBtn}`}>
+            2
+          </button>
+          <button onClick={takeInp} className={`outline-btn ${outlineBtn}`}>
+            3
+          </button>
+          <button onClick={takeInp} className={`fill-btn ${fillBtn}`}>
+            -
+          </button>
         </div>
         <div className="w-full flex justify-between items-center gap-3">
-          <button className={`fill-btn ${fillBtn}`}>.</button>
-          <button className={`outline-btn ${outlineBtn}`}>0</button>
+          <button onClick={takeInp} className={`fill-btn ${fillBtn}`}>
+            .
+          </button>
+          <button onClick={takeInp} className={`outline-btn ${outlineBtn}`}>
+            0
+          </button>
 
           <button className="w-full bg-teal-500 hover:bg-teal-600 transition-all active:opacity-90 max-sm:hover:bg-teal-500 max-sm:active:opacity-100  h-16 rounded-lg">
             =
