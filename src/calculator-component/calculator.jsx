@@ -8,8 +8,8 @@ export const Calculator = () => {
     <div className="main-container mx-auto my-28 max-sm:my-7 flex flex-col justify-center items-center gap-6 p-6 px-7 rounded-3xl bg-neutral-800">
       <div className="w-full flex justify-between items-start mt-2 mb-0">
         <div className="flex flex-col justify-between gap-2  items-start">
-          <img src="/logo.png" className="w-24" alt="img" />
-          <h2 className="text-white text-xl font-medium">HS-8LV</h2>
+          <img src="/logo.png" className="w-24 opacity-90" alt="img" />
+          <h2 className="text-white text-xl font-medium opacity-80">HS-8LV</h2>
         </div>
         <img src="/solar.jpg" className="w-32 rounded-md" alt="img" />
       </div>
