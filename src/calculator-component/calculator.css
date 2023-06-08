@@ -12,3 +12,6 @@
 .inputs {
   background-color: #d4e2e3f3;
 }
+button {
+  min-width: 64px;
+}
