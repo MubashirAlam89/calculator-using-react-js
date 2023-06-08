@@ -8,7 +8,7 @@ export const Calculator = () => {
 
   const [mainInpValue, setMainInpValue] = useState("");
 
-  const takeInp = () => {
+  const takeInp = (e) => {
     if (
       (mainInpValue === "" && e.target.innerText === "+") ||
       (mainInpValue === "" && e.target.innerText === "-") ||
