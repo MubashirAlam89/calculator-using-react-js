@@ -121,7 +121,10 @@ export const Calculator = () => {
             0
           </button>
 
-          <button className="w-full bg-teal-500 hover:bg-teal-600 transition-all active:opacity-90 max-sm:hover:bg-teal-500 max-sm:active:opacity-100  h-16 rounded-lg">
+          <button
+            onClick={calculate}
+            className="equals-btn w-full bg-teal-500 hover:bg-teal-600 transition-all active:opacity-90 max-sm:hover:bg-teal-500 max-sm:active:opacity-100  h-16 rounded-lg"
+          >
             =
           </button>
         </div>
