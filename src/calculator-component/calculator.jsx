@@ -48,6 +48,7 @@ export const Calculator = () => {
       </div>
       <div className="inputs rounded-md w-full bg-neutral-300/95 text-black">
         <input
+          value={mainHistoryInpValue}
           disabled
           className="w-full px-1 pt-2 bg-transparent text-right text-2xl"
           id="history-inp"
