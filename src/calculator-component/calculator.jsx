@@ -36,7 +36,10 @@ export const Calculator = () => {
       setMainInpValue("Error");
     }
   };
-
+  const clearAll = () => {
+    setMainInpValue("");
+    setHistoryInpValue("");
+  };
   return (
     <div className="main-container mx-auto my-28 max-sm:my-7 flex flex-col justify-center items-center gap-6 p-6 px-7 rounded-3xl bg-neutral-800">
       <div className="w-full flex justify-between items-start mt-2 mb-0">
