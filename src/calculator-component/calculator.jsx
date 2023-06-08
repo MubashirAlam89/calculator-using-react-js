@@ -38,6 +38,7 @@ export const Calculator = () => {
           id="history-inp"
         />
         <input
+          value={mainInpValue}
           disabled
           className="w-full px-1 py-3 bg-transparent text-right text-3xl"
           id="main-inp"
