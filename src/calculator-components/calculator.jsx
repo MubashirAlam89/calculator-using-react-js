@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./calculator.css";
-import { Button } from "../button-component/button";
-import { CalculatorHeader } from "../calculator-header-component/calculatorHeader";
-import { CalculatorScreen } from "../calculator-screen-component/calculatorScreen";
+import { Button } from "./button-component/button";
+import { CalculatorHeader } from "./calculator-header-component/calculatorHeader";
+import { CalculatorScreen } from "./calculator-screen-component/calculatorScreen";
 export const Calculator = () => {
   const outlineBtnClasses =
     "w-16 h-16 rounded-lg border-2 border-neutral-500 hover:bg-neutral-500/30 max-sm:hover:bg-transparent active:opacity-90 max-sm:active:opacity-100 transition-all";
