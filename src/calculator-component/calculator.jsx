@@ -65,13 +65,13 @@ export const Calculator = () => {
           <input
             value={mainHistoryInpValue}
             disabled
-            className="w-full px-1 pt-2 bg-transparent text-right text-2xl"
+            className="w-full px-1 pt-2 bg-transparent text-right font-medium text-2xl"
             id="history-inp"
           />
           <input
             value={mainInpValue}
             disabled
-            className="w-full px-1 py-3 bg-transparent text-right text-3xl"
+            className="w-full px-1 py-3 bg-transparent text-right font-medium text-3xl"
             id="main-inp"
           />
         </div>
