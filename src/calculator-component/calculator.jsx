@@ -10,6 +10,9 @@ export const Calculator = () => {
   const [mainHistoryInpValue, setHistoryInpValue] = useState("");
 
   const takeInp = (e) => {
+    if (mainInpValue === "Error") {
+      return;
+    }
     if (
       (mainInpValue === "" && e.target.innerText === "+") ||
       (mainInpValue === "" && e.target.innerText === "-") ||
