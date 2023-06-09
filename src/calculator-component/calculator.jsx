@@ -77,7 +77,10 @@ export const Calculator = () => {
           >
             AC
           </button>
-          <div className="w-full h-16 flex justify-center items-center rounded-lg  bg-red-500 hover:bg-red-600 transition-all active:opacity-90 max-sm:hover:bg-red-500 cursor-pointer max-sm:active:opacity-100">
+          <div
+            onClick={backspace}
+            className="backspace-btn w-full h-16 flex justify-center items-center rounded-lg  bg-red-500 hover:bg-red-600 transition-all active:opacity-90 max-sm:hover:bg-red-500 cursor-pointer max-sm:active:opacity-100"
+          >
             <img src="/backspace.png" className="w-8 mr-0.5 " alt="" />
           </div>
           <button onClick={takeInp} className={`fill-btn ${fillBtn}`}>
