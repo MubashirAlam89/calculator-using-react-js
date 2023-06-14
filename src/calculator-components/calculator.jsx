@@ -11,7 +11,7 @@ export const Calculator = () => {
   const equalsBtnClasses =
     "w-full bg-teal-500 hover:bg-teal-600 transition-all active:opacity-90 max-sm:hover:bg-teal-500 max-sm:active:opacity-100  h-16 rounded-lg";
   const redBtnClasses =
-    "w-full h-16 rounded-lg bg-red-500 hover:bg-red-600 transition-all active:opacity-90 max-sm:hover:bg-red-500 max-sm:active:opacity-100";
+    "h-16 rounded-lg bg-red-500 hover:bg-red-600 transition-all active:opacity-90 max-sm:hover:bg-red-500 max-sm:active:opacity-100";
 
   const [mainInpValue, setMainInpValue] = useState("");
   const [historyInpValue, setHistoryInpValue] = useState("");
@@ -65,10 +65,14 @@ export const Calculator = () => {
       />
       <div className="btns w-full text-white text-3xl flex flex-col justify items-center gap-3">
         <div className="w-full flex justify-between items-center gap-3">
-          <Button title={"AC"} func={clearAll} classes={redBtnClasses} />
+          <Button
+            title={"AC"}
+            func={clearAll}
+            classes={`w-3/5  ${redBtnClasses}`}
+          />
           <div
             onClick={backspace}
-            className={`backspace-btn flex justify-center items-center cursor-pointer ${redBtnClasses} `}
+            className={`backspace-btn flex justify-center items-center cursor-pointer w-2/5  ${redBtnClasses} `}
           >
             <img src="/backspace.png" className="w-8 mr-0.5 " alt="" />
           </div>
